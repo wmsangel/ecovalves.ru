@@ -1,0 +1,32 @@
+{
+  "name": "ecovalves.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --proxy \"ecovalves\" --files 'css/*.css, *.html' & npm run dev:css",
+    "dev:css": "node-sass -wr src/scss/ -o css/",
+    "build:css": "node-sass src/scss/ -o css/ --output-style compressed",
+    "minify:css": "npm run build:css & npx postcss css/*.css --use autoprefixer -d css",
+    "manifest": "appcache-manifest \"index.{html,css,js}\" \"css/*.{css,js}\" \"js/*.{css,js}\" \"img/**/*.{webp,svg}\" \"fonts/*.{eot,svg,woff,woff2,ttf}\" --network-star -o cache.appcache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmsangel/ecovalves.ru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmsangel/ecovalves.ru/issues"
+  },
+  "homepage": "https://github.com/wmsangel/ecovalves.ru#readme",
+  "dependencies": {
+    "appcache-manifest": "^2.1.0",
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "scss": "^0.2.4"
+  }
+}

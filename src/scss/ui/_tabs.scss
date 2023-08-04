@@ -1,0 +1,40 @@
+.product-tab {
+  margin: 40px 0;
+
+  &__link {
+    padding: 12px 80px;
+    border-radius: 8px;
+    color: #fff;
+    background: #869FB5;
+    margin-right: 12px;
+    transition: all .3s ease;
+    font-weight: 700;
+
+    &--selected {
+      background: #1D2935;
+    }
+
+    &:hover {
+      background: #1D2935;
+      color: #fff;
+    }
+
+    @media (max-width: 480px) {
+      padding: 12px 24px;
+    }
+  }
+}
+
+.product-tab-nav {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.product-tab-content {
+  &:not(&--selected) {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+@import "reset";
+@import "fonts";
+
+// BLOCKS
+@import "blocks/application";
+@import "blocks/brands";
+@import "blocks/catalog";
+@import "blocks/features";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/news";
+@import "blocks/slider";
+@import "blocks/breadcrumbs";
+@import "blocks/product";
+
+// UI
+@import "ui/popup";
+@import "ui/buttons";
+@import "ui/forms";
+@import "ui/icons";
+@import "ui/tabs";
+@import "ui/vars";
+
+// COMMON
+@import "common";

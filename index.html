@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="ru" manifest="cache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecovalves.ru</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="app" class="js-wrap">
+    <header>
+        <div class="container">
+            <div class="quick-top">
+                <div class="quick-top__left">
+                    <div class="top-location">Москва</div>
+                    <div class="top-time">Пн-Пт 09:00-18:00</div>
+                </div>
+                <div class="quick-top__right">
+                    <ul class="quick-top-links">
+                        <li class="quick-top-links__item">
+                            <a href="about.html" class="quick-top-links__item-link">О компании</a></li>
+                        <li class="quick-top-links__item">
+                            <a href="news.html" class="quick-top-links__item-link">Новости</a>
+                        </li>
+                        <li class="quick-top-links__item">
+                            <a href="contacts.html" class="quick-top-links__item-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header">
+                <div class="header__left">
+                    <a href="index.html"><img loading="lazy" src="img/logo.png" srcset="img/logo@2x.png 2x" alt=""></a>
+                </div>
+                <div class="header__right">
+                    <div class="header-info-row js-mobile-header-info">
+                        <div class="header-search">
+                            <form action="form.php">
+                                <input type="text" placeholder="Я хочу найти..">
+                            </form>
+                        </div>
+                        <div class="header-contacts">
+                            <a href="mailto:username@gmail.com" class="header-contacts__email">username@gmail.com</a>
+                            <a href="tel:+70000000000" class="header-contacts__phone">+7 000 000 00 00</a>
+                            <a href="#" class="btn btn-green js-popup-btn" data-popup-id="order" data-popup-size="standart">Рассчитать заказ</a>
+                        </div>
+                    </div>
+                    <ul class="header-nav">
+                        <li class="header-nav-item header-nav-item--dropdown">
+                            <a href="#" class="header-nav-item__link">
+                                <span class="icon" data-icon="armatura"></span>
+                                Запорная арматура
+                            </a>
+
+                            <ul class="header-nav-dropdown">
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item header-nav-item--dropdown">
+                            <a href="#" class="header-nav-item__link">
+                                <span class="icon" data-icon="klapan"></span>
+                                Клапаны электромагнитные
+                            </a>
+
+                            <ul class="header-nav-dropdown">
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item header-nav-item--dropdown">
+                            <a href="#" class="header-nav-item__link">
+                                <span class="icon" data-icon="reg-armatura"></span>
+                                Регулирующая арматура
+                            </a>
+
+                            <ul class="header-nav-dropdown">
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item header-nav-item--dropdown">
+                            <a href="#" class="header-nav-item__link">
+                                <span class="icon" data-icon="kip"></span>
+                                КИП
+                            </a>
+
+                            <ul class="header-nav-dropdown">
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="header-nav-dropdown-item">
+                                    <a href="catalog-selected.html" class="header-nav-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav-item header-nav-item--last">
+                            <a href="#" class="btn btn-dark-gray">
+                                <span class="icon" data-icon="white-phone"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="categories-list mobile-only js-mobile-menu">
+                        <li class="categories-list-item categories-list-item--dropdown js-categories-dropdown-link">
+                            <a href="#" class="categories-list-item__link">
+                                <span class="icon" data-icon="armatura"></span>
+                                Запорная арматура
+                            </a>
+
+                            <ul class="categories-list-dropdown">
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="categories-list-item categories-list-item--dropdown js-categories-dropdown-link">
+                            <a href="#" class="categories-list-item__link">
+                                <span class="icon" data-icon="klapan"></span>
+                                Клапаны электромагнитные
+                            </a>
+
+                            <ul class="categories-list-dropdown">
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="categories-list-item categories-list-item--dropdown js-categories-dropdown-link">
+                            <a href="#" class="categories-list-item__link">
+                                <span class="icon" data-icon="reg-armatura"></span>
+                                Регулирующая арматура
+                            </a>
+
+                            <ul class="categories-list-dropdown">
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="categories-list-item categories-list-item--dropdown js-categories-dropdown-link">
+                            <a href="#" class="categories-list-item__link">
+                                <span class="icon" data-icon="kip"></span>
+                                КИП
+                            </a>
+
+                            <ul class="categories-list-dropdown">
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие наклонные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Клапаны регулирующие проходные</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                                <li class="categories-list-dropdown-item">
+                                    <a href="catalog.html" class="categories-list-dropdown-item__link">Регулирующая арматура</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="mobile-menu-btn js-mobile-menu-btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="swiper hero-slider js-hero-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero-slider-item">
+                <img class="hero-slider-item__img" src="img/sliders/slide-img_1x.webp" srcset="img/sliders/slide-img_2x.webp 2x" alt="Поставка запорно-регулирующей арматуры и КИПа из Европы">
+                <div class="container">
+                    <h1 class="hero-slider-item__title">
+                        Поставка запорно-регулирующей арматуры и КИПа из Европы
+                    </h1>
+                    <div class="hero-slide-brands">
+                        <img loading="lazy" src="img/brands/brand_3.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_4.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_1.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_5.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_6.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide hero-slider-item">
+                <img class="hero-slider-item__img" src="img/sliders/slide-img_1x.webp" srcset="img/sliders/slide-img_2x.webp 2x" alt="Поставка запорно-регулирующей арматуры и КИПа из Европы">
+                <div class="container">
+                    <div class="hero-slider-item__title">
+                        Поставка запорно-регулирующей арматуры и КИПа из Европы
+                    </div>
+                    <div class="hero-slide-brands">
+
+                        <img loading="lazy" src="img/brands/brand_9.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_7.svg" alt="">
+                        <img loading="lazy" src="img/brands/brand_10.webp" alt="">
+                        <img loading="lazy" src="img/brands/brand_8.svg" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <section>
+            <div class="container">
+                <h2 class="section-title">Почему выбирают ECOVALVES?</h2>
+                <div class="row" data-cols="3">
+                    <div class="col white-box">
+                        <div class="features-item">
+                            <div class="features-item__icon">
+                                <img loading="lazy" src="img/icons/features-1.svg" alt="">
+                            </div>
+                            <div class="features-item__text">
+                                Большой выбор оборудования по приемлемым ценам
+                            </div>
+                            <div class="features-item__divider"></div>
+                        </div>
+                    </div>
+                    <div class="col white-box">
+                        <div class="features-item">
+                            <div class="features-item__icon">
+                                <img loading="lazy" src="img/icons/features-2.svg" alt="">
+                            </div>
+                            <div class="features-item__text">
+                                Прямые контакты с заводами-производителями в Европе
+                            </div>
+                            <div class="features-item__divider"></div>
+                        </div>
+                    </div>
+                    <div class="col white-box">
+                        <div class="features-item">
+                            <div class="features-item__icon">
+                                <img loading="lazy" src="img/icons/features-3.svg" alt="">
+                            </div>
+                            <div class="features-item__text">
+                                Оптимальные сроки
+                                <br>поставки
+                            </div>
+                            <div class="features-item__divider"></div>
+                        </div>
+                    </div>
+                    <div class="col white-box">
+                        <div class="features-item">
+                            <div class="features-item__icon">
+                                <img loading="lazy" src="img/icons/features-4.svg" alt="">
+                            </div>
+                            <div class="features-item__text">
+                                Оборудование надежных мировых производителей, существующих на рынке десятки лет
+                            </div>
+                            <div class="features-item__divider"></div>
+                        </div>
+                    </div>
+                    <div class="col white-box">
+                        <div class="features-item">
+                            <div class="features-item__icon">
+                                <img loading="lazy" src="img/icons/features-5.svg" alt="">
+                            </div>
+                            <div class="features-item__text">
+                                Надежность оборудования и низкий уровень затрат на обслуживание
+                            </div>
+                            <div class="features-item__divider"></div>
+                        </div>
+                    </div>
+                    <div class="col white-box">
+                        <div class="features-item">
+                            <div class="features-item__icon">
+                                <img loading="lazy" src="img/icons/features-6.svg" alt="">
+                            </div>
+                            <div class="features-item__text">
+                                Оперативная и профессиональная
+                                обработка ваших запросов
+                            </div>
+                            <div class="features-item__divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-catalog section-with-bg">
+            <div class="container">
+                <h2 class="section-title">Каталог</h2>
+                <div class="row" data-cols="3">
+                    <div class="col catalog-item">
+                        <a href="#" class="catalog-item__link"></a>
+                        <img loading="lazy" src="img/catalog/catalog_1.webp" alt="" class="catalog-item__img">
+                        <div class="catalog-item__title">Запорная арматура</div>
+                    </div>
+                    <div class="col catalog-item">
+                        <a href="#" class="catalog-item__link"></a>
+                        <img loading="lazy" src="img/catalog/catalog_2.webp" alt="" class="catalog-item__img">
+                        <div class="catalog-item__title">Регулирующая арматура</div>
+                    </div>
+                    <div class="col catalog-item">
+                        <a href="#" class="catalog-item__link"></a>
+                        <img loading="lazy" src="img/catalog/catalog_3.webp" alt="" class="catalog-item__img">
+                        <div class="catalog-item__title">КИП</div>
+                    </div>
+                    <div class="col catalog-item">
+                        <a href="#" class="catalog-item__link"></a>
+                        <img loading="lazy" src="img/catalog/catalog_4.webp" alt="" class="catalog-item__img">
+                        <div class="catalog-item__title">Приводная техника</div>
+                    </div>
+                    <div class="col catalog-item">
+                        <a href="#" class="catalog-item__link"></a>
+                        <img loading="lazy" src="img/catalog/catalog_5.webp" alt="" class="catalog-item__img">
+                        <div class="catalog-item__title">Промышленное насосное оборудование</div>
+                    </div>
+                    <div class="col catalog-item">
+                        <a href="#" class="catalog-item__link"></a>
+                        <img loading="lazy" src="img/catalog/catalog_6.webp" alt="" class="catalog-item__img">
+                        <div class="catalog-item__title">Оборудование для промышленной водоподготовки</div>
+                    </div>
+                </div>
+                <div class="catalog-more">
+                    <a href="catalog.html" class="btn btn-green-outline">Смотреть весь каталог</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container brands-slider">
+                <h2>Бренды, с которыми мы работаем</h2>
+                <div class="swiper js-slider-brands slider-brands">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_4.svg" alt="">
+                    </div>
+                    <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_2.svg" alt="">
+                    </div>
+                    <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_5.svg" alt="">
+                    </div>
+                    <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_6.svg" alt="">
+                    </div>
+                    <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_3.svg" alt="">
+                    </div>
+                      <div class="swiper-slide slider-brands-item">
+                        <img loading="lazy" src="img/brands/brand-gray_7.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="js-slider-brands-prev swiper-button-prev"></div>
+                <div class="js-slider-brands-next swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section-application">
+            <div class="container">
+                <div class="application-form">
+                    <div class="application-form__form">
+                        <form action="form.php">
+                            <h2 class="section-title">Оставьте заявку</h2>
+                            <div class="section-subtitle">Мы свяжемся с вами, чтобы ответить на вопросы и оформить заказ</div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="name">Ваше имя</label>
+                                    <input type="text" id="name" placeholder="Имя" required>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="phone">Номер телефона</label>
+                                    <input type="tel" id="phone" placeholder="Телефон"  required>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="email">Электронная почта</label>
+                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="comment">Комментарий</label>
+                                    <textarea id="comment" placeholder="Дополнительный комментарий"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="file" class="input-file">
+                                        <input type="file" id="file" class="js-files">
+                                        <span class="input-file__list js-files-list"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="agree" class="input-checkbox">
+                                        <input type="checkbox" id="agree" required>
+                                        Нажимая на кнопку “Отправить”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row form-action" data-cols="1">
+                                <div class="form-col">
+                                    <input type="submit" class="btn btn-green" value="Отправить">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="application-form__img">
+                        <img loading="lazy" src="img/application-form.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-features">
+            <div class="container">
+                <h2>Наши преимущества</h2>
+                <div class="row" data-cols="2">
+                    <div class="col">
+                        <div class="our-features">
+                            <div class="our-features__title">
+                                <span class="icon" data-icon="features-1"></span>
+                                Более <span>10 лет</span>
+                            </div>
+                            <div class="our-features__subtitle">
+                                опыт работы наших специалистов в сфере поставки оборудования
+                            </div>
+                            <div class="our-features__divider"></div>
+                            <div class="our-features__text">
+                                Мы предлагаем вам исчерпывающее знание продукции и номенклатуры для решения ваших задач.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="our-features">
+                            <div class="our-features__title">
+                                <span class="icon" data-icon="features-2"></span>
+                                Гарантия <span>надежности</span>
+                            </div>
+                            <div class="our-features__subtitle">
+                                заказывая оборудование у нас, вы можете быть уверены в его качестве
+                            </div>
+                            <div class="our-features__divider"></div>
+                            <div class="our-features__text">
+                                Мы не только предлагаем приемлемые цены, но и гарантируем низкий уровень затрат на обслуживание.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="our-features">
+                            <div class="our-features__title">
+                                <span class="icon" data-icon="features-3"></span>
+                                Прямые <span>поставки</span>
+                            </div>
+                            <div class="our-features__subtitle">
+                                оборудования надежных европейских производителей
+                            </div>
+                            <div class="our-features__divider"></div>
+                            <div class="our-features__text">
+                                Таких как Burkert, Gemu, IFM, E+H, Grundfos, KSB и других
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="our-features">
+                            <div class="our-features__title">
+                                <span class="icon" data-icon="features-4"></span>
+                                Оперативные и <span>полные ответы</span>
+                            </div>
+                            <div class="our-features__subtitle">
+                                на все ваши запросы
+                            </div>
+                            <div class="our-features__divider"></div>
+                            <div class="our-features__text">
+                                Мы обрабатываем ваши заказы в течение 1 рабочего дня. При отсутствии необходимого оборудования осуществляем подбор альтернативных вариантов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="section-title">Новости</h2>
+                <div class="row news-list" data-cols="4">
+                    <div class="col news-item">
+                        <a href="news-detail.html" class="news-item__link"></a>
+                        <div class="news-item__img">
+                            <img loading="lazy" src="img/news/news_1.webp" alt="">
+                        </div>
+                        <div class="news-item__title">Название новости</div>
+                        <div class="news-item__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div>
+                        <div class="news-item__date">29.06.2023</div>
+                    </div>
+                    <div class="col news-item">
+                        <a href="news-detail.html" class="news-item__link"></a>
+                        <div class="news-item__img">
+                            <img loading="lazy" src="img/news/news_2.webp" alt="">
+                        </div>
+                        <div class="news-item__title">Название новости</div>
+                        <div class="news-item__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div>
+                        <div class="news-item__date">29.06.2023</div>
+                    </div>
+                    <div class="col news-item">
+                        <a href="news-detail.html" class="news-item__link"></a>
+                        <div class="news-item__img">
+                            <img loading="lazy" src="img/news/news_3.webp" alt="">
+                        </div>
+                        <div class="news-item__title">Название новости</div>
+                        <div class="news-item__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div>
+                        <div class="news-item__date">29.06.2023</div>
+                    </div>
+                    <div class="col news-item">
+                        <a href="news-detail.html" class="news-item__link"></a>
+                        <div class="news-item__img">
+                            <img loading="lazy" src="img/news/news_4.webp" alt="">
+                        </div>
+                        <div class="news-item__title">Название новости</div>
+                        <div class="news-item__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div>
+                        <div class="news-item__date">29.06.2023</div>
+                    </div>
+                </div>
+                <div class="news-more">
+                    <a href="news.html" class="btn btn-green-outline btn-green-outline--dark">Все новости</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-application">
+            <div class="container">
+                <div class="application-form application-form--dark">
+                    <div class="application-form__form">
+                        <form action="form.php">
+                            <h2 class="section-title">Оставьте заявку</h2>
+                            <div class="section-subtitle">Мы свяжемся с вами, чтобы ответить на вопросы и оформить заказ</div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="name1">Ваше имя</label>
+                                    <input type="text" id="name1" placeholder="Имя" required>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="phone1">Номер телефона</label>
+                                    <input type="tel" id="phone1" placeholder="Телефон" required>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="email1">Электронная почта</label>
+                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email1" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="comment1">Комментарий</label>
+                                    <textarea id="comment1" placeholder="Дополнительный комментарий"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="file1" class="input-file">
+                                        <input type="file" id="file1" class="js-files">
+                                        <span class="input-file__list js-files-list"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row" data-cols="1">
+                                <div class="form-col">
+                                    <label for="agree1" class="input-checkbox">
+                                        <input type="checkbox" id="agree1" required>
+                                        Нажимая на кнопку “Отправить”, Вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row form-action" data-cols="1">
+                                <div class="form-col">
+                                    <input type="submit" class="btn btn-green" value="Отправить заявку">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="application-form__img">
+                        <img loading="lazy" src="img/application-form.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-logo">
+                    <a href="index.html"><img loading="lazy" src="img/logo.png" srcset="img/logo@2x.png 2x" alt=""></a>
+                    <p>ООО «НПП МЕДИАНА-ЭКО»</p>
+                    <p><span>
+                        ИНН: 7720593156
+                        <br>КПП: 772701001
+                        <br>ОГРН: 1077760026519</span>
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li class="footer-nav-link__item">
+                            <a href="index.html" class="footer-nav-link__item-link">Главная</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="catalog-selected.html" class="footer-nav-link__item-link">Оборудование для промышленной водоподготовки</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="about.html" class="footer-nav-link__item-link">О компании</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="catalog-selected.html" class="footer-nav-link__item-link">Промышленное насосное оборудование</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="#" class="footer-nav-link__item-link">Отзывы</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="catalog-selected.html" class="footer-nav-link__item-link">Регулирующая арматура</a>
+                        </li>
+
+                        <li class="footer-nav-link__item">
+                            <a href="catalog-selected.html" class="footer-nav-link__item-link">Запорная арматура</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="news.html" class="footer-nav-link__item-link">Новости</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="catalog-selected.html" class="footer-nav-link__item-link">Приводная техника</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="contacts.html" class="footer-nav-link__item-link">Контакты</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="catalog-selected.html" class="footer-nav-link__item-link">КИП</a>
+                        </li>
+                        <li class="footer-nav-link__item">
+                            <a href="#" class="footer-nav-link__item-link">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-contacts__title">Контакты</div>
+                    <div class="footer-contacts__list">
+                        <div class="footer-contacts-link footer-contacts-link__address">г. Москва, ул. Пушкина 47/2</div>
+                        <div class="footer-contacts-link footer-contacts-link__time">Пн-Пт &nbsp; 09:00-18:00</div>
+                        <a href="mailto:username@gmail.com" class="footer-contacts-link footer-contacts-link__email">username@gmail.com</a>
+                        <a href="tel:+70000000000" class="footer-contacts-link footer-contacts-link__phone">+7 000 000 00 00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-row">
+            <div class="container">
+                <div class="copyright">
+                    <div class="copyright-developer">
+                        Разработано <a href="https://wsp-studio.ru/" rel="noindex,nofollow">WSP Studio</a>
+                    </div>
+                    <div class="copyright-link">
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                    <div class="copyright-text">
+                        Copyright ©2022 – 2023 Ecovalves
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="popup-overlay js-popup-close"></div>
+<div class="popup-wrap">
+    <div class="popup js-popup" data-popup-id="order" data-popup-size="standart">
+        <button class="popup__close js-popup-close"></button>
+        <div class="popup__title">Оставьте заявку</div>
+        <div class="popup__content">
+            <form action="form.php">
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="name2">Ваше имя</label>
+                        <input type="text" id="name2" placeholder="Имя" required>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="phone2">Номер телефона</label>
+                        <input type="tel" id="phone2" placeholder="Телефон"  required>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="email2">Электронная почта</label>
+                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email2" placeholder="E-mail" required>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="file2" class="input-file">
+                            <input type="file" id="file2" class="js-files">
+                            <span class="input-file__list js-files-list"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="agree2" class="input-checkbox">
+                            <input type="checkbox" id="agree2" required>
+                            Нажимая на кнопку “Отправить”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row form-action" data-cols="1">
+                    <div class="form-col">
+                        <input type="submit" class="btn btn-green" value="Отправить">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script defer src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script defer src="js/main.js"></script>
+
+</body>
+</html>
