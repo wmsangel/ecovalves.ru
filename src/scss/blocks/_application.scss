@@ -70,6 +70,10 @@ section.section-application {
     input[type="text"] {
       background: #1D2935;
       border-color: #506071;
+
+      &:focus {
+        border-color: #7f90a2;
+      }
     }
 
     .input-file,

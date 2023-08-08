@@ -38,9 +38,10 @@ $(function (){
             },
         });
     }
+
     if ($('.js-slider-brands').length) {
         const swiper = new Swiper('.js-slider-brands', {
-            // loop: true,
+            loop: true,
             slidesPerView: 6,
             navigation: {
                 nextEl: '.js-slider-brands-next.swiper-button-next',
@@ -90,9 +91,10 @@ $(function (){
             },
             spaceBetween: 10,
             slidesPerView: 4,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
+            loop: true,
+            // freeMode: true,
+            // watchSlidesVisibility: true,
+            // watchSlidesProgress: true,
         });
     }
 

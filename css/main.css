@@ -175,6 +175,12 @@ section.section-application h2 {
     .application-form--dark input[type="text"] {
       background: #1D2935;
       border-color: #506071; }
+      .application-form--dark textarea:focus,
+      .application-form--dark input[type="tel"]:focus,
+      .application-form--dark input[type="password"]:focus,
+      .application-form--dark input[type="email"]:focus,
+      .application-form--dark input[type="text"]:focus {
+        border-color: #7f90a2; }
     .application-form--dark .input-file,
     .application-form--dark .input-file__list,
     .application-form--dark .input-file:before {
@@ -1321,9 +1327,6 @@ li.breadcrumbs-item {
   .product-gallery-thumb-wrap .swiper-slide-thumb-active {
     opacity: 1; }
 
-.product-gallery-thumbs-item {
-  width: 98px !important; }
-
 .tech-detail-row {
   display: flex;
   margin: 0 0 8px 0; }
@@ -1515,9 +1518,9 @@ body.is-popup-opened .popup-wrap {
     border-radius: 8px;
     color: #506071; }
     .btn-white:hover {
-      background: var(--green);
-      color: #fff;
-      box-shadow: 0 0 8px 0 rgba(30, 187, 95, 0.6); }
+      background: #fff;
+      color: #506071;
+      box-shadow: 0 0 8px 0 rgba(80, 96, 113, 0.12); }
   .btn-dark-gray {
     background: var(--dark-gray);
     padding: 12px 24px;
