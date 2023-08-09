@@ -37,6 +37,21 @@ $(function (){
                 clickable: true
             },
         });
+
+        const swiper2 = new Swiper('.js-hero-slider-mobile', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            navigation: {
+                nextEl: '.js-hero-slider-mobile .swiper-button-next',
+                prevEl: '.js-hero-slider-mobile .swiper-button-prev',
+            },
+            pagination: {
+                el: '.js-hero-slider-mobile .swiper-pagination',
+                clickable: true
+            },
+        });
     }
 
     if ($('.js-slider-brands').length) {
