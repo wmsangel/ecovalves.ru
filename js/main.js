@@ -62,10 +62,6 @@ $(function (){
                 nextEl: '.js-slider-brands-next.swiper-button-next',
                 prevEl: '.js-slider-brands-prev.swiper-button-prev',
             },
-            pagination: {
-                el: '.js-slider-brands .swiper-pagination',
-                clickable: true
-            },
             breakpoints: {
                 320: {
                     slidesPerView: 1,
@@ -127,6 +123,9 @@ $(function (){
         var galleryTop = new Swiper('.js-product-related', {
             slidesPerView: 4,
             spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+            },
             navigation: {
                 nextEl: '.js-product-related-next.swiper-button-next',
                 prevEl: '.js-product-related-prev.swiper-button-prev',

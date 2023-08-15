@@ -273,6 +273,16 @@
   background: #fff;
   border-radius: 8px;
   transition: all .3s ease;
+  position: relative;
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 
   &__img {
     text-align: center;
@@ -341,6 +351,8 @@
       border-width: 1px;
       padding: 8px 16px;
       border-radius: 4px;
+      position: relative;
+      z-index: 2;
     }
   }
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "browser-sync start --proxy \"ecovalves\" --files 'css/*.css, *.html' & npm run dev:css",
+    "dev": "browser-sync start --server --files 'css/*.css, *.html' & npm run dev:css",
     "dev:css": "node-sass -wr src/scss/ -o css/",
     "build:css": "node-sass src/scss/ -o css/ --output-style compressed",
     "minify:css": "npm run build:css & npx postcss css/*.css --use autoprefixer -d css",
