@@ -90,7 +90,7 @@ $(function (){
     // CATEGORIES
     $('body').on('click', '.js-categories-dropdown-link', function (e) {
         e.preventDefault();
-        $(this).toggleClass('is-opened')
+        $(this).parents('li').first().toggleClass('is-opened')
     })
 
     // PRODUCT
