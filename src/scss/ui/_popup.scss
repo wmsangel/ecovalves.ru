@@ -35,6 +35,11 @@
   z-index: 101;
   max-height: 90vh;
   overflow-y: auto;
+  display: none;
+
+  &.is-popup-opened {
+    display: block;
+  }
 
   &[data-popup-size="standart"] {
     width: 480px;

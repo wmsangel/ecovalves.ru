@@ -157,7 +157,7 @@
                             </ul>
                         </li>
                         <li class="header-nav-item header-nav-item--last">
-                            <a href="#" class="btn btn-dark-gray">
+                            <a href="#" class="btn btn-dark-gray js-popup-btn" data-popup-id="order-2" data-popup-size="standart">
                                 <span class="icon" data-icon="white-phone"></span>
                             </a>
                         </li>
@@ -495,6 +495,53 @@
     <div class="popup js-popup" data-popup-id="order" data-popup-size="standart">
         <button class="popup__close js-popup-close"></button>
         <div class="popup__title">Оставьте заявку</div>
+        <div class="popup__content">
+            <form action="form.php">
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="name2">Ваше имя</label>
+                        <input type="text" id="name2" placeholder="Имя" required>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="phone2">Номер телефона</label>
+                        <input type="tel" id="phone2" placeholder="Телефон"  required>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="email2">Электронная почта</label>
+                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email2" placeholder="E-mail" required>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="file2" class="input-file">
+                            <input type="file" id="file2" class="js-files">
+                            <span class="input-file__list js-files-list"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row" data-cols="1">
+                    <div class="form-col">
+                        <label for="agree2" class="input-checkbox">
+                            <input type="checkbox" id="agree2" required>
+                            Нажимая на кнопку “Отправить”, Вы соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row form-action" data-cols="1">
+                    <div class="form-col">
+                        <input type="submit" class="btn btn-green" value="Отправить">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup js-popup" data-popup-id="order-2" data-popup-size="standart">
+        <button class="popup__close js-popup-close"></button>
+        <div class="popup__title">Оставьте заявку 22</div>
         <div class="popup__content">
             <form action="form.php">
                 <div class="form-row" data-cols="1">

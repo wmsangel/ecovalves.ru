@@ -1550,7 +1550,10 @@ li.breadcrumbs-item {
   transform: translate(-50%, -50%);
   z-index: 101;
   max-height: 90vh;
-  overflow-y: auto; }
+  overflow-y: auto;
+  display: none; }
+  .popup.is-popup-opened {
+    display: block; }
   .popup[data-popup-size="standart"] {
     width: 480px; }
     @media (max-width: 480px) {
