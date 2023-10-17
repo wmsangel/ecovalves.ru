@@ -89,6 +89,10 @@ textarea {
   cursor: pointer;
   transition: all .3s ease;
 
+  &.is-complete {
+    border: 2px dashed #1EBB5F;
+  }
+
   &:after {
     content: 'Прикрепить файлы';
     font-size: 14px;
@@ -131,6 +135,7 @@ textarea {
     bottom: 0;
     border-radius: 8px;
     z-index: 3;
+    padding: 2px 8px;
     display: flex;
     justify-content: center;
     align-items: center;

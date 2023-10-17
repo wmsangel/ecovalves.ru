@@ -8,6 +8,8 @@
   transition: all .3s ease;
   text-align: center;
   justify-content: center;
+  box-shadow: none;
+  border: none;
 
   &--icon {
     .icon {
@@ -92,6 +94,24 @@
       color: #506071;
       border-color: #506071;
     }
+  }
+
+  &--catalog {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='61' viewBox='0 0 60 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M31.6667 10.9449L43.3333 27.6116H20L31.6667 10.9449ZM20 37.6116H43.3333L31.6667 54.2783L20 37.6116Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    background-size: 22px;
+    padding-left: 42px;
+    transition: none;
+  }
+
+  &--filter {
+    background-image: url("data:image/svg+xml,%3Csvg width='61' height='61' viewBox='0 0 61 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.8101 19.713H54.8101' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.81006 19.713H11.6101' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M50.0103 41.313H54.8103' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.81006 41.313H30.8101' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.2099 29.3129C26.5117 29.3129 30.8099 25.0147 30.8099 19.7129C30.8099 14.411 26.5117 10.1129 21.2099 10.1129C15.9079 10.1129 11.6099 14.411 11.6099 19.7129C11.6099 25.0147 15.9079 29.3129 21.2099 29.3129Z' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40.4101 50.9129C45.7119 50.9129 50.0101 46.6147 50.0101 41.3129C50.0101 36.0111 45.7119 31.7129 40.4101 31.7129C35.1082 31.7129 30.8101 36.0111 30.8101 41.3129C30.8101 46.6147 35.1082 50.9129 40.4101 50.9129Z' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    background-size: 22px;
+    padding-left: 42px;
+    transition: none;
   }
 }
 

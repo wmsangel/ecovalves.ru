@@ -12,6 +12,7 @@ li.breadcrumbs-item {
   font-style: normal;
   font-weight: 400;
   color: #869FB5;
+  display: flex;
 
   &:not(:last-child) {
     &:after {
@@ -22,8 +23,22 @@ li.breadcrumbs-item {
       display: inline-block;
       position: relative;
       left: 9px;
-      top: 4px;
+      top: 2px;
+
+      @media (max-width: 767px) {
+        left: 0;
+        top: 2px;
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+      }
     }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 11px;
+    margin-right: 2px;
+    margin-bottom: 2px;
   }
 }
 

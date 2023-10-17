@@ -60,6 +60,7 @@ header {
   align-items: center;
   padding: 11px 0 17px;
 
+  .catalog-list,
   .categories-list {
     display: none;
     overflow-y: auto;
@@ -76,7 +77,6 @@ header {
   &__right {
     width: calc(100% - 95px);
     padding-left: 20px;
-    padding-right: 14px;
 
     @media (max-width: 998px) {
       width: calc(100% - 40px);
@@ -252,6 +252,9 @@ header {
 
   &--dropdown {
     &:hover {
+      > .header-nav-item__link {
+        z-index: 10;
+      }
       .header-nav-dropdown {
         display: block;
       }
@@ -283,8 +286,10 @@ header {
   box-shadow: 0 4px 12px 0 rgba(29, 41, 53, 0.16);
   padding: 50px 0 20px 0 !important;
   top: 0;
-  min-width: 250px;
-  z-index: 3;
+  left: 0;
+  right: 0;
+  min-width: 220px;
+  z-index: 5;
 
   @media (max-width: 1200px) {
     min-width: 160px;
@@ -360,7 +365,7 @@ header {
     transition: all .3s ease;
     line-height: 1.2;
     display: block;
-    padding: 16px 24px;
+    padding: 16px 20px;
 
     &:hover {
       color: var(--green)

@@ -5,7 +5,7 @@ $(function (){
         e.preventDefault();
         if (!$(this).hasClass('is-touched')) {
             $('.js-mobile-menu-btn').addClass('mobile-menu-btn--opened');
-            $('.js-mobile-menu').addClass('categories-list--opened');
+            $('.js-mobile-menu').addClass('catalog-list--opened');
             $('.js-mobile-header-info').addClass('header-info-row--opened');
 
             setTimeout(function (e) {
@@ -13,7 +13,7 @@ $(function (){
             }, 300)
         } else {
             $('.js-mobile-menu-btn').removeClass('mobile-menu-btn--opened');
-            $('.js-mobile-menu').removeClass('categories-list--opened');
+            $('.js-mobile-menu').removeClass('catalog-list--opened');
             $('.js-mobile-header-info').removeClass('header-info-row--opened');
 
             setTimeout(function (e) {
@@ -82,9 +82,17 @@ $(function (){
 
     $('.js-files').on('change', function (e) {
         var files = this.files;
+        var field = $(this);
         if (files.length) {
-            $(this).next('.js-files-list').text(files[0].name)
+            var fileNames = [];
+            for (var i = 0; i < files.length; i++) {
+                fileNames.push(files[i].name);
+            }
+            field.parents('.input-file').find('.js-files-list').text(fileNames.join(', '));
+
+            field.parents('.input-file').addClass('is-complete')
         }
+
     })
 
     // CATEGORIES
@@ -155,6 +163,13 @@ $(function (){
         });
     }
 
+    // CATALOG
+    $('body').on('click', '.js-catalog-link', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('is-opened');
+        $(this).parent('.catalog-list-item--dropdown').find('.catalog-list-dropdown').first().toggleClass('is-opened');
+    })
+
 
     // TABS
     body.on('click', '.js-tab-link', function (e) {
@@ -167,6 +182,26 @@ $(function (){
             $('.js-tab-link[data-tab="'+tabID+'"]').addClass('product-tab__link--selected');
             $('.js-tab-content[data-tab="'+tabID+'"]').addClass('product-tab-content--selected');
         }
+    })
+
+
+    // FITLER AND CATALOG
+    body.on('click', '.js-catalog-mobile-btn', function (e) {
+        e.preventDefault();
+        $('.js-mobile-categories').addClass('is-opened')
+    })
+    body.on('click', '.js-mobile-catalog-close', function (e) {
+        e.preventDefault();
+        $('.js-mobile-categories').removeClass('is-opened')
+    })
+
+    body.on('click', '.js-filter-mobile-btn', function (e) {
+        e.preventDefault();
+        $('.js-mobile-filter').addClass('is-opened')
+    })
+    body.on('click', '.js-mobile-filter-close', function (e) {
+        e.preventDefault();
+        $('.js-mobile-filter').removeClass('is-opened')
     })
 
     // POPUP
